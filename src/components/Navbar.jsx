@@ -6,7 +6,7 @@ const Navbar = ({ items, setItems }) => {
   console.log(items);
   const [search, setSearch] = useState("");
   const submitHandler = (e) => {
-    e.prventDefault();
+    e.preventDefault();
     const filterProduct = items.filter((item) =>
       item.title.toLowerCase().includes(search)
     );
